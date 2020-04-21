@@ -21,7 +21,14 @@
    }
    H1 {text-align: center}
    h2 { padding: 0px 50px;  /*margin*/ /*padding*/}
-
+   h2:first-letter{font-family: 'Times New Roman', Times, serif;
+                   font-size: 200%;
+                   color:red;}
+    h2:first-line {line-height: 1.5;
+    letter-spacing: 6px;}
+    h2::before{
+      content: "Новое...";
+    }
    .container{
     display: flex;
     flex-direction: row;
@@ -58,7 +65,7 @@
 
 <div class = "html">
   	<p><h1><a name = "html"><img src="images/html.png"></a></h1></p>
-    <h2>HTML или <abbr title = "язык гипертекстовой разметки">HyperText Markup Language</abbr>— стандартизированный язык разметки документов во Всемирной паутине.
+    <h2>&amp;#128386; HTML или <abbr title = "язык гипертекстовой разметки">HyperText Markup Language</abbr>— стандартизированный язык разметки документов во Всемирной паутине.
     Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации
     форматированный текст отображается на экране монитора компьютера или мобильного устройства.
     Язык HTML до 5-й версии определялся как приложение SGML (стандартного обобщённого языка разметки по стандарту ISO 8879). Спецификации HTML5 формулируются
