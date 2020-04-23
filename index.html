@@ -24,11 +24,16 @@
    h2:first-letter{font-family: 'Times New Roman', Times, serif;
                    font-size: 200%;
                    color:red;}
-    h2:first-line {line-height: 1.5;
-    letter-spacing: 6px;}
-    h2::before{
-      content: "Новое...";
-    }
+   table {
+     font-size: 200%;
+   }
+   td{
+     color:red !important;
+   }
+   td{
+     color:green;
+   }
+
    .container{
     display: flex;
     flex-direction: row;
@@ -44,7 +49,6 @@
     height: 325px;
 }
 .con1, .con2, .con3{margin-bottom: 20px;}
-
   </style>
  </head>
  <body>
@@ -65,7 +69,7 @@
 
 <div class = "html">
   	<p><h1><a name = "html"><img src="images/html.png"></a></h1></p>
-    <h2>&amp;#128386; HTML или <abbr title = "язык гипертекстовой разметки">HyperText Markup Language</abbr>— стандартизированный язык разметки документов во Всемирной паутине.
+    <h2>HTML или <abbr title = "язык гипертекстовой разметки">HyperText Markup Language</abbr>— стандартизированный язык разметки документов во Всемирной паутине.
     Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации
     форматированный текст отображается на экране монитора компьютера или мобильного устройства.
     Язык HTML до 5-й версии определялся как приложение SGML (стандартного обобщённого языка разметки по стандарту ISO 8879). Спецификации HTML5 формулируются
@@ -73,19 +77,29 @@
     Язык XHTML является более строгим вариантом HTML, он следует синтаксису XML и является приложением языка XML в области разметки гипертекста.
     Во всемирной паутине HTML-страницы, как правило, передаются браузерам от сервера по протоколам HTTP или HTTPS, в виде простого текста или с использованием шифрования.</h2>
     <div class="container">
-      <div class = "con1"><h1>Бойко Арсений</h1>
-        <img src="images/Arsenii.png">
-        https://demonit4028.github.io/5opka/
+      <div class = "con1"><h1>&#10102;Бойко Арсений</h1>
+        <a href="https://demonit4028.github.io/5opka/"><img src="images/Arsenii.png"></a>
       </div>
-      <div class = "con2"><h1>Толстых Иван</h1>
-        <img src="images/Ivan.png">
-        https://ammauze1.github.io/html/
+      <div class = "con2"><h1>&#10103;Толстых Иван</h1>
+        <a href = "https://ammauze1.github.io/html/"><img src="images/Ivan.png"></a>
       </div>
       <div class = "con3">333</div>
       <div class = "con4">444</div>
       <div class = "con5">555</div>
       <div class = "con6">666</div>
     </div>
+    <table border="1" width="100%" cellpadding="5">
+      <tr>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+      <tr>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+    </table>
 </div>
 
 <div class = "scratch">
